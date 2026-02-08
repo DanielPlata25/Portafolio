@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Daniel Plata</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navegación -->
+    <nav class="navegacion">
+        <div class="contenedor navegacion-contenido">
+            <a href="#inicio" class="logo">
+                <span class="codigo">&lt;</span>Daniel<span class="verde">Plata</span><span class="codigo">/&gt;</span>
+            </a>
+            <ul class="menu-lista">
+                <li><a href="#inicio" class="enlace-nav activo">Inicio</a></li>
+                <li><a href="#proyectos" class="enlace-nav">Proyectos</a></li>
+                <li><a href="#sobre-mi" class="enlace-nav">Sobre Mí</a></li>
+                <li><a href="#habilidades" class="enlace-nav">Habilidades</a></li>
+                <li><a href="#experiencia" class="enlace-nav">Experiencia</a></li>
+                <li><a href="#blog" class="enlace-nav">Blog</a></li>
+                <li><a href="#contacto" class="enlace-nav contacto-btn">Contacto</a></li>
+            </ul>
+            <button class="menu-btn" id="menu-btn">
+                <span class="linea"></span>
+                <span class="linea"></span>
+                <span class="linea"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="seccion seccion-inicio">
+        <div class="contenedor">
+            <div class="inicio-contenido">
+                <div class="inicio-texto">
+                    <h1 class="inicio-titulo">
+                        <span class="saludo">Hola, soy</span>
+                        <span class="nombre">Daniel Plata</span>
+                        <span class="titulo-profesional">Desarrollador Web</span>
+                    </h1>
+                    <p class="inicio-descripcion">
+                        Creo experiencias digitales modernas y funcionales usando tecnologías web.
+                        Mi pasión es transformar ideas en código que funcione en cualquier dispositivo.
+
+                    </p>
+                    <div class="inicio-botones">
+                        <a href="#proyectos" class="boton boton-primario">
+                            <i class="fas fa-code"></i> Ver Mis Proyectos
+                        </a>
+                        <a href="#contacto" class="boton boton-secundario">
+                            <i class="fas fa-envelope"></i> Contáctame
+                        </a>
+                    </div>
+                </div>
+                <div class="inicio-ilustracion">
+                    <div class="ilustracion-codigo">
+                        <div class="codigo-container">
+                            <div class="codigo-lineas">
+                                <pre><code><span class="codigo-comentario">// Mi viaje en desarrollo web</span>
+<span class="codigo-keyword">const</span> <span class="codigo-variable">miPerfil</span> <span class="codigo-operator">=</span> {
+  <span class="codigo-property">nombre</span>: <span class="codigo-string">"Daniel Plata"</span>,
+  <span class="codigo-property">especialidad</span>: <span class="codigo-string">"Desarrollo Web"</span>,
+  <span class="codigo-property">enfoque</span>: <span class="codigo-string">"Frontend"</span>,
+  <span class="codigo-property">aprendiendo</span>: [<span class="codigo-string">"React"</span>],
+  <span class="codigo-property">disponible</span>: <span class="codigo-boolean">true</span>
+};
+
+<span class="codigo-comentario">// Transformar ideas en realidad</span>
+<span class="codigo-keyword">function</span> <span class="codigo-function">crearProyecto</span>(<span class="codigo-parameter">idea</span>) {
+  <span class="codigo-keyword">return</span> <span class="codigo-string">`✨ ${idea} → 💻 código`</span>;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="seccion seccion-proyectos">
+        <div class="contenedor">
+            <div class="encabezado-seccion">
+                <h2 class="titulo-seccion">Mis Proyectos</h2>
+                <p class="descripcion-seccion">Una selección de mis trabajos más recientes en desarrollo web</p>
+            </div>
+
+            <div class="proyectos-grid">
+                <div class="proyecto">
+                    <div class="proyecto-imagen">
+                        <img src="/proyecto1.png" alt="E-commerce Website">
+                        <div class="proyecto-overlay">
+                            <a href="https://github.com/JosueReyes13/tdmex" target="_blank" class="boton-ver">Ver
+                                Proyecto <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3 class="proyecto-titulo">Desarrollo Frontend</h3>
+                        <p class="proyecto-descripcion">
+                            Desarrollo de una pagina para una empresa, implementando diseño responsivo, animaciones
+                            personalizadas. Ademas de incluir los servicios que proporcionan, formulario de contacto
+                            funcional y donde pueden localizarlos.
+                        </p>
+                        <div class="proyecto-tecnologias">
+                            <span class="tecnologia">React</span>
+                            <span class="tecnologia">CSS3</span>
+                            <span class="tecnologia">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <div class="proyecto-imagen">
+                        <img src="/proyecto2.png" alt="Dashboard Analytics">
+                        <div class="proyecto-overlay">
+                            <a href="#" class="boton-ver">Ver Proyecto <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3 class="proyecto-titulo">E-commerce</h3>
+                        <p class="proyecto-descripcion">
+                            Plataforma de comercio electrónico completa con carrito de compras, sistema de pagos y panel
+                            de administración.
+                            Desarrollada con enfoque en experiencia de usuario y diseño responsivo.
+                        </p>
+                        <div class="proyecto-tecnologias">
+                            <span class="tecnologia">React</span>
+                            <span class="tecnologia">Chart.js</span>
+                            <span class="tecnologia">Node.js</span>
+                            <span class="tecnologia">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="seccion seccion-sobre-mi">
+        <div class="contenedor">
+            <div class="encabezado-seccion">
+                <h2 class="titulo-seccion">Sobre Mí</h2>
+                <p class="descripcion-seccion">Mi viaje en el desarrollo web y lo que me apasiona</p>
+            </div>
+
+            <div class="sobre-mi-contenido">
+                <div class="sobre-mi-texto">
+                    <h3 class="subtitulo">Mi Historia</h3>
+                    <p>
+                        Mi interés por la tecnología comenzó desde joven, pero fue durante mis estudios
+                        de ingeniería en informática donde descubrí mi pasión por el desarrollo web.
+                        Me fascinó la posibilidad de crear algo tangible que pudiera ver y usar
+                        inmediatamente en el navegador.
+                    </p>
+                    <p>
+                        Después de terminar la carrera, decidí especializarme en desarrollo web
+                        a través de un bootcamp intensivo que me permitió adquirir habilidades
+                        prácticas y actualizadas. Desde entonces, he estado trabajando en proyectos
+                        personales y colaborando en iniciativas freelance que me han permitido
+                        seguir creciendo como profesional.
+                    </p>
+                    <p>
+                        Creo firmemente en el aprendizaje continuo. El mundo del desarrollo web
+                        evoluciona rápidamente, y mantenerme actualizado con las últimas tecnologías
+                        y mejores prácticas es una parte fundamental de mi rutina diaria.
+                    </p>
+                </div>
+
+                <div class="sobre-mi-intereses">
+                    <h3 class="subtitulo">Más Allá del Código</h3>
+                    <div class="intereses-grid">
+                        <div class="interes">
+                            <i class="fas fa-book"></i>
+                            <span>La Escritura</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Videojuegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-music"></i>
+                            <span>Música Electrónica</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Proyectos Personales</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades" class="seccion seccion-habilidades">
+        <div class="contenedor">
+            <div class="encabezado-seccion">
+                <h2 class="titulo-seccion">Habilidades</h2>
+                <p class="descripcion-seccion">Tecnologías, lenguajes y herramientas que utilizo</p>
+            </div>
+
+            <div class="habilidades-container">
+                <div class="habilidades-grid">
+                    <div class="habilidad-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+
+                    <div class="habilidad-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="habilidad-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="habilidad-item">
+                        <i class="fab fa-java"></i>
+                        <span>Java</span>
+                    </div>
+
+                    <div class="habilidad-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+
+                    <div class="habilidad-item">
+                        <i class="fas fa-database"></i>
+                        <span>MySQL</span>
+                    </div>
+
+                    <div class="habilidad-item">
+                        <i class="fas fa-code"></i>
+                        <span>C++</span>
+                    </div>
+
+                    <div class="habilidad-item">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+
+                    <div class="habilidad-item">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Experiencia -->
+    <section id="experiencia" class="seccion seccion-experiencia">
+        <div class="contenedor">
+            <div class="encabezado-seccion">
+                <h2 class="titulo-seccion">Mi Experiencia</h2>
+                <p class="descripcion-seccion">Mi trayectoria formativa y profesional</p>
+            </div>
+
+            <div class="experiencia-timeline">
+                <div class="experiencia-item">
+                    <div class="experiencia-fecha">2025 - 2026</div>
+                    <div class="experiencia-contenido">
+                        <div class="experiencia-icono">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="experiencia-descripcion">
+                            <h3 class="experiencia-titulo">Bootcamp de Desarrollo Web Full Stack</h3>
+                            <p>
+                                Programa intensivo de 13 semanas enfocado en tecnologías modernas de desarrollo web.
+                                Reforce mis conocimientos anteriores, ademas de aprender el lenguage de Java para
+                                construir aplicaciones completas desde el frontend hasta el backend,
+                                utilizando las mejores prácticas de la industria y metodologías ágiles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experiencia-item">
+                    <div class="experiencia-fecha">2025</div>
+                    <div class="experiencia-contenido">
+                        <div class="experiencia-icono">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="experiencia-descripcion">
+                            <h3 class="experiencia-titulo">Desarrollador Web Independiente</h3>
+                            <p>
+                                Desarrolle una pagina web de forma indepediente, implementando interfaces web
+                                responsivas y dinámicas utilizando HTML5, CSS3, JavaScript y React, asegurando una
+                                experiencia de usuario óptima y
+                                funcional. Ademas aportando animaciones personalizadas con CSS3 y JavaScript para crear
+                                transiciones fluidas que mejoraron significativamente la retencion y navegacion del
+                                usuario.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experiencia-item">
+                    <div class="experiencia-fecha">2020 - 2025</div>
+                    <div class="experiencia-contenido">
+                        <div class="experiencia-icono">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="experiencia-descripcion">
+                            <h3 class="experiencia-titulo">Ingeniería en Informática</h3>
+                            <p>
+                                Estudié los fundamentos de la informática, algoritmos, estructuras de datos,
+                                bases de datos y desarrollo de software. Esta formación me dio una base sólida
+                                para especializarme en desarrollo web y entender los principios detrás de la tecnología.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Blog -->
+    <section id="blog" class="seccion seccion-blog">
+        <div class="contenedor">
+            <div class="encabezado-seccion">
+                <h2 class="titulo-seccion">Blog</h2>
+                <p class="descripcion-seccion">Reflexiones y aprendizajes sobre desarrollo web</p>
+            </div>
+
+            <div class="blog-container">
+                <article class="articulo-blog">
+                    <div class="articulo-header">
+                        <div class="articulo-fecha">01 febrero, 2026</div>
+                    </div>
+                    <h3 class="articulo-titulo">Reflexión de mi camino como desarrollador/a Java</h3>
+
+                    <div class="articulo-contenido-minimo">
+                        <p>
+                            Al tener conocimientos de C++, tengo nocienes de como es programar con Java, aunque debo
+                            reforzar
+                            mis conocimientos sobre la programación orientada a objetos y se me complica un poco.
+                        </p>
+
+                        <p>
+                            <strong>Lo que necesito mejorar:</strong>
+                        </p>
+                        <ul>
+                            <li>Entender mejor las clases y objetos</li>
+                            <li>Practicar más con herencia</li>
+                            <li>Aprender a usar ArrayList y HashMap</li>
+                        </ul>
+
+                        <p>
+                            <strong>Mis metas para este año:</strong>
+                        </p>
+                        <ul>
+                            <li>Hacer 2-3 proyectos prácticos</li>
+                            <li>Entender Spring Boot básico</li>
+                        </ul>
+
+
+                </article>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="seccion seccion-contacto">
+        <div class="contenedor">
+            <div class="encabezado-seccion">
+                <h2 class="titulo-seccion">Contacto</h2>
+                <p class="descripcion-seccion">¿Tienes un proyecto en mente? Hablemos</p>
+            </div>
+
+            <div class="contacto-contenido">
+                <div class="contacto-info">
+                    <div class="contacto-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>daniel@devportfolio.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contacto-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/danielplata</p>
+                        </div>
+                    </div>
+
+                    <div class="contacto-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>github.com/danielplata</p>
+                        </div>
+                    </div>
+
+                    <div class="contacto-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h3>Sitio Web</h3>
+                            <p>www.danielplata.dev</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contacto-formulario">
+                    <h3 class="formulario-titulo">Enviar Mensaje</h3>
+                    <div class="form-grupo">
+                        <input type="text" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-grupo">
+                        <input type="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="form-grupo">
+                        <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="boton boton-primario">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <div class="pie-contenido">
+                <div class="pie-logo">
+                    <a href="#inicio" class="logo">
+                        <span class="codigo">&lt;</span>Daniel<span class="verde">Plata</span><span
+                            class="codigo">/&gt;</span>
+                    </a>
+                    <p class="pie-descripcion">Desarrollador web creando experiencias digitales modernas.</p>
+                </div>
+
+                <div class="pie-enlaces">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="pie-redes">
+                    <h4>Sígueme</h4>
+                    <div class="redes">
+                        <a href="https://github.com/DanielPlata25" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/danielplata25/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="pie-derechos">
+                <p>&copy; 2023 Daniel Plata. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
